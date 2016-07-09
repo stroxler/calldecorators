@@ -14,3 +14,9 @@ error without affecting the stacktrace. This allows errors raised
 b low-level code, which may not have enough information to construct
 error messages indicating what was going on, to be made far more
 informative.
+
+The `debug` decorator wraps functions in a debugger post-mortem.
+The debugger it uses is optionally configurable, you can
+optionally set a delay so that users can bypass via keyboard
+interrupt, and you can optionally toggle the behavior on and
+off (for example, using global configuration).
